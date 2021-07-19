@@ -1,0 +1,172 @@
+@media (max-width: 1366px) {
+    .container {
+        max-width: 992px;
+    }
+    .promo {
+        background-size: 600px;
+        background-position: top 0px right -50px;
+    }
+    .promo_title {
+        font-size: 34px;
+    }
+    .promo_subtitle {
+        font-size: 20px;
+    }
+    .section_title {
+        font-size: 34px;
+    }
+    .card_title {
+        font-size: 22px;
+    }
+    .card_rating,
+    .card_price,
+    .card_category {
+        font-size: 16px;
+    }
+    .card_rating::before {
+        background-size: 90%;
+    }
+}
+
+@media (max-width: 996px) {
+    .container {
+        max-width: 767px;
+    }
+    .promo {
+        background-size: 500px;
+        background-position: top 15px right -50px;
+        padding: 30px;
+    }
+    .promo_title {
+        font-size: 30px;
+    }
+    .promo_subtitle {
+        font-size: 16px;
+    }
+    .section_title {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .restaurants {
+        margin-top: 35px;
+        padding-bottom: 35px;
+    }
+    .card_title {
+        font-size: 18px;
+    }
+    .card_timer {
+        width: 45px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .card_heading,
+    .card_info {
+        padding: 0 15px;
+    }
+    .card_rating,
+    .card_price,
+    .card_category {
+        font-size: 14px;
+    }
+    .card_rating::before {
+        background-size: 80%;
+        background-position: center;
+    }
+    .navbar_item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 766px) {
+    .container {
+        max-width: 577px;
+    }
+    .search {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .promo {
+        background-size: 400px;
+        background-position: top 105px right -35px;
+    }
+    .promo_title {
+        font-size: 26px;
+        line-height: 1.1;
+    }
+    .promo_subtitle {
+        width: 340px;
+        line-height: 1.3;
+    }
+    .section_title {
+        font-size: 26px;
+    }
+    .search-restaurants {
+        flex: 0.8;
+    }
+    .card {
+        flex-basis: 48%;
+    }
+    .footer_menu {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .navbar {
+        width: 60%;
+    }
+    .navbar_menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo_footer {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-adress {
+        order: 2;
+        margin-top: 20px;
+        flex: 1;
+    }
+    .button {
+        font-size: 0;
+    }
+    .button_image {
+        margin-right: 0;
+    }
+    .promo {
+        background-image: none;
+        height: 180px;
+    }
+    .promo_subtitle {
+        font-size: 14px;
+        width: 302px;
+    }
+    .section_title {
+        font-size: 22px;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .footer_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo_footer {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

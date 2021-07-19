@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 32px;
+}
+
+.search-adress {
+    flex: 0.8;
+    height: 40px;
+    background: url(../icon/home.svg) left 10px center no-repeat;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    align-items: center;
+    /* text-align: center; */
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: contrast(0.7);
+}
+
+.button-blue {
+    margin-right: 10px;
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+}
+
+.button-blue:hover {
+    filter: contrast(1);
+    filter: saturate(400%);
+}
+
+.button_image {
+    margin-right: 6px;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.promo {
+    margin-top: 40px;
+    height: 300px;
+    background: #FFF1B8 no-repeat url(../image/kisspng-sausage-pizza-margherita-hamburger-calzone-sausage-pizza-5a7f9cdf698d78.5827570315183126714324.png) top -20px right -50px / 700px;
+    padding: 68px;
+}
+
+.promo_title {
+    font-size: 39px;
+    line-height: 46px;
+    color: #302C34;
+    margin-bottom: 15px;
+}
+
+.promo_subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+
+.restaurants {
+    margin-top: 56px;
+    padding-bottom: 60px;
+}
+
+.restaurants_link {
+    text-decoration: none;
+}
+
+.search-restaurants {
+    flex: 0.35;
+}
+
+.section_heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_title {
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.search-restaurants {
+    width: 306px;
+    background: no-repeat url(../icon/search.svg) center left 10px;
+}
+
+.cards {
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 32%;
+    height: 384px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card_image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card_heading {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.card_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.card_timer {
+    width: 55px;
+    height: 22px;
+    background: #262626;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.card_info {
+    margin-top: 10px;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.card_rating {
+    position: relative;
+    padding-left: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107;
+    margin-right: 26px;
+}
+
+.card_rating::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 8px;
+    display: block;
+    background: no-repeat url(../icon/star.svg);
+}
+
+.card_price {
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+    margin-right: 10px;
+}
+
+.card_category {
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+    padding-left: 15px;
+    text-overflow: ellipsis;
+}
+
+.card_category::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 12.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #8C8C8C;
+}
+
+.footer {
+    height: 156px;
+    background-color: #fff;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 61px;
+    padding-bottom: 61px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar_menu {
+    display: flex;
+    margin-left: 36px;
+    align-items: center;
+}
+
+.navbar_item {
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-decoration: none;
+}
+
+.navbar_item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+}
+
+.social_icon:not(:last-child) {
+    margin-right: 21px;
+}
+
+.restaurants_descr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 0; */
+}
+
+.restaurants_title {
+    margin-right: 30px;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.food_card {
+    padding-bottom: 30px;
+    height: 416px;
+}
+
+.food_title {
+    font-weight: 400;
+}
+
+.food_image {
+    height: 212px;
+    margin-bottom: 4px;
+}
+
+.food_descr {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    margin-bottom: 25px;
+}
+
+.food_price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.btn-cart {
+    width: 129px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+}
+
+.button_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    /* margin-right: 4px; */
+}
+
+.btn_image {
+    margin-right: 0;
+}
