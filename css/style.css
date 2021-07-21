@@ -115,10 +115,6 @@ h3 {
     text-decoration: none;
 }
 
-.search-restaurants {
-    flex: 0.35;
-}
-
 .section_heading {
     display: flex;
     justify-content: space-between;
@@ -132,7 +128,8 @@ h3 {
 }
 
 .search-restaurants {
-    width: 306px;
+    /* width: 306px; */
+    flex: 0.35;
     background: no-repeat url(../icon/search.svg) center left 10px;
 }
 
